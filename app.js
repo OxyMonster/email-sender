@@ -17,8 +17,5 @@ app.use( cors() );
 app.use( bodyParser.urlencoded({extended: true}) );
 app.use(bodyParser.json());
 
-app.use('/', express.static('public'))
-app.get('/backend', (req, res) => res.send('Hello World!'))
-
 // * * * EMAIL ROUTE  * * *
 app.use('/email', emailRoute);
