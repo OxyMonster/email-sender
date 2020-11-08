@@ -5,7 +5,7 @@ const dotenv = require('dotenv').config();
 
 // *  * Test * *  
 
-router.get('', req, res => {
+router.get('', (req, res) => {
   res.status(200).json('* * * Success * * * ');
 });
 
