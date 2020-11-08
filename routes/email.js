@@ -3,6 +3,12 @@ const router = express.Router();
 const nodemailer = require('nodemailer');
 const dotenv = require('dotenv').config();
 
+// *  * Test * *  
+
+router.get('', req, res => {
+  res.status(200).json('* * * Success * * * ');
+});
+
 // * * *  POST * * * *
 
 router.post('', (req, res, next) => {
